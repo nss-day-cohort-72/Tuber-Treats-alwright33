@@ -1,4 +1,5 @@
 namespace TuberTreats.Models;
+
 public class TuberOrder
 {
     public int Id { get; set; }
@@ -8,5 +9,5 @@ public class TuberOrder
     public int? TuberDriverId { get; set; }
     public TuberDriver TuberDriver { get; set; }
     public DateTime? DeliveredOnDate { get; set; }
-    public List<TuberTopping> TuberToppings { get; set; } = new List<TuberTopping>();
+    public List<Topping> Toppings { get; set; }
 }
